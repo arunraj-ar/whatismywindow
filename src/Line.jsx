@@ -4,7 +4,7 @@ const Line = ({ data = {} }) => {
 
 
   const [ showChild, setShowChild] = useState(false);
-
+    const getChildren = () => {
   if (typeof data === "object") {
     if (Array.isArray(data)) {
       data.map((item) => {
@@ -18,6 +18,12 @@ const Line = ({ data = {} }) => {
   } else {
     return <div>{JSON.stringify(data)}</div>;
   }
+}
+
+
+return (
+    <div>{getChildren()}</div>
+)
 };
 
 export default Line;
