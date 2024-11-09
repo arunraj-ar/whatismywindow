@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
 const Line = ({ data = {} }) => {
-
-
-  const [ showChild, setShowChild] = useState(false);
     const getChildren = () => {
   if (typeof data === "object") {
     if (Array.isArray(data)) {
