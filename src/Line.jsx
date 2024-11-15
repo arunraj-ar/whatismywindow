@@ -22,7 +22,7 @@ const Line = ({ data = {} }) => {
 
 
 return (
-    <div>{getChildren()}</div>
+    // <div>{getChildren()}</div>
 )
 };
 
